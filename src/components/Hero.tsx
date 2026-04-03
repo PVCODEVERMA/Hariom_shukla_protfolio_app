@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
                         href="https://drive.google.com/file/d/1TqR0nSE2cwjcAUv0L8zo_TZNVRCnJ9RV/view?usp=sharing" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-accent border-2 border-accent px-8 py-3 rounded-full uppercase tracking-tighter text-sm font-black hover:bg-accent hover:text-primary transition-all duration-300"
+                        className="flex items-center gap-2 mt-4 text-accent border-2 border-accent px-8 py-3 rounded-full uppercase tracking-tighter text-sm font-black hover:bg-accent hover:text-primary transition-all duration-300"
                     >
                         Resume <Download size={20} />
                     </a>
