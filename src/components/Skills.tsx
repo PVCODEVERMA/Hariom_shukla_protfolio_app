@@ -43,7 +43,7 @@ const Skills: React.FC = () => {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="text-3xl md:text-5xl font-black mb-16 flex items-center gap-4 text-text uppercase tracking-tighter"
+                    className="text-3xl md:text-5xl font-black my-10 flex items-center gap-4 text-text uppercase tracking-tighter"
                 >
                     Skills
                     <span className="h-px bg-secondary/20 flex-grow"></span>

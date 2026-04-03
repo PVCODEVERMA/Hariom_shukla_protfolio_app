@@ -37,7 +37,7 @@ const experiences = [
 
 const Experience: React.FC = () => {
     return (
-        <section id="experience" className=" px-6 bg-primary/20">
+        <section id="experience" className=" py-10 bg-primary/20">
             <div className="max-w-6xl mx-auto">
                 <motion.h2 
                     initial={{ opacity: 0, x: -20 }}
