@@ -1,23 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Code, Microchip } from 'lucide-react';
+import { ExternalLink, Layers, Zap, MessageSquare } from 'lucide-react';
 
 const projects = [
   {
-    title: 'MULTI-LEVEL MARKETING SYSTEM',
-    description: 'Developed a Multi-Level Marketing (MLM) system using Node.js, Express.js, and MongoDB, enabling user registration, hierarchical network creation, and commission tracking. Implemented secure APIs for managing user data, transactions, and payouts. Optimized database queries to handle complex tree structures efficiently.',
-    tech: ['Node.js', 'Express.js', 'MongoDB'],
-    link: '#',
+    title: 'DAAKit One: Multi-Channel Aggregator',
+    description: 'A robust eCommerce command center that synchronizes orders and shipments across 15+ major channels like Amazon, Shopify, and Myntra. Engineered a unified dashboard to eliminate manual errors and optimize order allocation using smart routing logic.',
+    tech: ['Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Omnichannel Logic'],
+    link: 'https://daakit.com/',
     github: '#',
-    icon: <Microchip size={24} />
+    icon: <Layers size={24} />
   },
   {
-    title: 'LINKEDIN AUTOMATION TOOL',
-    description: "Developed a LinkedIn automation tool using Node.js and Express.js to streamline message handling. The script automates login using provided credentials, reads all unread messages, and generates intelligent replies using OpenAI's API. Ensured secure handling of user data and efficient API integration for seamless performance.",
-    tech: ['Node.js', 'Express.js', 'OpenAI API'],
-    link: '#',
+    title: 'DAAKit Go: Instant & Same-Day Delivery',
+    description: 'An advanced last-mile delivery engine powering D2C brands with hyperlocal intelligence. Implemented real-time order tracking and a dark store network architecture to enable same-day delivery speeds and predictive route planning.',
+    tech: ['Node.js', 'AWS EC2', 'Real-time Tracking', 'Logistics Tech'],
+    link: 'https://daakit.com/',
     github: '#',
-    icon: <Code size={24} />
+    icon: <Zap size={24} />
+  },
+  {
+    title: 'DAAKit CX: Customer Experience Suite',
+    description: 'A unified communication hub (WhatsApp, SMS, Email) designed to maximize customer trust. Features an automated NDR (Non-Delivery Report) engagement engine with intelligent retry logic and real-time NPS tracking.',
+    tech: ['Node.js', 'WhatsApp API', 'Automated Workflows', 'Customer Analytics'],
+    link: 'https://daakit.com/',
+    github: '#',
+    icon: <MessageSquare size={24} />
   }
 ];
 

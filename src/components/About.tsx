@@ -24,15 +24,15 @@ const About: React.FC = () => {
             className="lg:col-span-2 space-y-8"
           >
             <p className="text-xl md:text-2xl text-text leading-relaxed font-medium">
-              I am a results-driven <span className="text-accent underline decoration-secondary/30">Software Engineer</span> with over <span className="text-accent font-bold">2+ years of hands-on experience</span> in designing and developing scalable full-stack applications.
+              I am a results-oriented <span className="text-accent underline decoration-secondary/30">Software Engineer</span> architecting high-performance <span className="text-accent font-bold">eCommerce ecosystems</span> and customer experience platforms. With over <span className="text-accent font-bold">2+ years of expertise</span>, I specialize in transforming business operations through scalable technology.
             </p>
             
             <p className="text-lg md:text-xl text-secondary leading-relaxed">
-              I specialize in building high-performance backend systems and seamless frontend experiences, with strong expertise in Node.js, system architecture, and API development.
+              I excel at bridging the gap between complex backend logic and seamless frontend interactions, with deep expertise in Node.js, system architecture, and multi-channel integration strategies.
             </p>
             
             <p className="text-lg md:text-xl text-secondary leading-relaxed">
-              With a solid foundation in Linux and cloud platforms like AWS and GCP, I have expanded my capabilities into DevOps, focusing on infrastructure management and production-grade deployments.
+              My current mission is to revolutionize the logistics and retail landscape through the DAAKit product suite, leveraging advanced cloud-native deployments on AWS and GCP to ensure peak performance and reliability at scale.
             </p>
           </motion.div>
           

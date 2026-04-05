@@ -6,32 +6,32 @@ const skills = [
   {
     category: 'Languages',
     icon: <Code size={20} />,
-    items: ['C', 'C++', 'JavaScript']
+    items: ['JavaScript (ES6+)', 'C/C++', 'Shell Scripting']
   },
   {
     category: 'Frontend',
     icon: <Layout size={20} />,
-    items: ['HTML', 'CSS', 'Bootstrap', 'React.js']
+    items: ['React.js', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Context API']
   },
   {
     category: 'Backend',
     icon: <Server size={20} />,
-    items: ['Node.js', 'Express.js', 'PHP (CodeIgniter)']
+    items: ['Node.js', 'Express.js', 'Microservices', 'RESTful APIs', 'JWT Auth']
   },
   {
     category: 'Databases',
     icon: <Database size={20} />,
-    items: ['MySQL', 'MongoDB']
+    items: ['MongoDB (Aggregation)', 'MySQL', 'Redis', 'Database Design']
   },
   {
     category: 'Cloud & DevOps',
     icon: <Cloud size={20} />,
-    items: ['AWS', 'GCP', 'Docker', 'Ansible']
+    items: ['AWS (EC2/S3)', 'GCP', 'Docker', 'CI/CD Pipelines', 'Nginx']
   },
   {
-    category: 'Tools & Platforms',
+    category: 'Specialized Tech',
     icon: <Settings size={20} />,
-    items: ['Linux', 'Windows', 'Git']
+    items: ['Logistics Tech', 'Order Aggregation', 'NDR Automation', 'Omnichannel Logic']
   }
 ];
 
