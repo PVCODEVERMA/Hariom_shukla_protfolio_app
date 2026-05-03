@@ -6,7 +6,7 @@ const About: React.FC = () => {
     <section id="about" className="pt-[2px]  px-6 bg-primary/30">
 
       <div className="max-w-6xl mx-auto">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -15,28 +15,32 @@ const About: React.FC = () => {
           About Me
           <span className="h-px bg-secondary/20 flex-grow"></span>
         </motion.h2>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="lg:col-span-2 space-y-8"
           >
             <p className="text-xl md:text-2xl text-text leading-relaxed font-medium">
-              I am a results-oriented <span className="text-accent underline decoration-secondary/30">Software Engineer</span> architecting high-performance <span className="text-accent font-bold">eCommerce ecosystems</span> and customer experience platforms. With over <span className="text-accent font-bold">2+ years of expertise</span>, I specialize in transforming business operations through scalable technology.
+              I am a results-driven <span className="text-accent underline decoration-secondary/30">Software Engineer</span> with <span className="text-accent font-bold">2+ years</span> of hands-on experience building and scaling full-stack applications, with a strong focus on <span className="text-accent font-bold">backend systems</span>, system design, and performance optimization.
             </p>
-            
+
             <p className="text-lg md:text-xl text-secondary leading-relaxed">
-              I excel at bridging the gap between complex backend logic and seamless frontend interactions, with deep expertise in Node.js, system architecture, and multi-channel integration strategies.
+              Currently working as a <span className="text-accent font-bold">Tech Lead at Daakit</span>, I design and develop scalable logistics platforms including WMS, aggregator systems, courier platforms, and analytics, planning, and forecasting systems. My work involves solving real-world operational challenges by building reliable, high-performance systems used in production environments.
             </p>
-            
+
             <p className="text-lg md:text-xl text-secondary leading-relaxed">
-              My current mission is to revolutionize the logistics and retail landscape through the DAAKit product suite, leveraging advanced cloud-native deployments on AWS and GCP to ensure peak performance and reliability at scale.
+              I specialize in <span className="text-accent font-bold">Node.js</span> and <span className="text-accent font-bold">API architecture</span>, with strong experience in building distributed systems and optimizing workflows at scale. Additionally, I work with <span className="text-accent font-bold">.NET</span> to develop secure, high-performance backend solutions. On the frontend, I leverage <span className="text-accent font-bold">React</span> to create seamless, scalable, and efficient user experiences.
+            </p>
+
+            <p className="text-lg md:text-xl text-secondary leading-relaxed">
+              Beyond development, I have strong expertise in <span className="text-accent font-bold">Linux, AWS, and GCP</span>, and actively work in the <span className="text-accent font-bold">DevOps</span> space—handling infrastructure, automation, CI/CD pipelines, and production deployments using tools like Docker and Ansible. I take ownership of end-to-end system design ensuring scalability, reliability, and performance across all layers of the stack.
             </p>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}

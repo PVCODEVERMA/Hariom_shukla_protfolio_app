@@ -3,43 +3,44 @@ import { motion } from 'framer-motion';
 import { Code, Layout, Server, Database, Cloud, Settings } from 'lucide-react';
 
 const skills = [
-  {
-    category: 'Languages',
-    icon: <Code size={20} />,
-    items: ['JavaScript (ES6+)', 'C/C++', 'Shell Scripting']
-  },
-  {
-    category: 'Frontend',
-    icon: <Layout size={20} />,
-    items: ['React.js', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Context API']
-  },
-  {
-    category: 'Backend',
-    icon: <Server size={20} />,
-    items: ['Node.js', 'Express.js', 'Microservices', 'RESTful APIs', 'JWT Auth']
-  },
-  {
-    category: 'Databases',
-    icon: <Database size={20} />,
-    items: ['MongoDB (Aggregation)', 'MySQL', 'Redis', 'Database Design']
-  },
-  {
-    category: 'Cloud & DevOps',
-    icon: <Cloud size={20} />,
-    items: ['AWS (EC2/S3)', 'GCP', 'Docker', 'CI/CD Pipelines', 'Nginx']
-  },
-  {
-    category: 'Specialized Tech',
-    icon: <Settings size={20} />,
-    items: ['Logistics Tech', 'Order Aggregation', 'NDR Automation', 'Omnichannel Logic']
-  }
+    {
+        category: 'Languages',
+        icon: <Code size={20} />,
+        items: ['JavaScript (ES6+)', 'C/C++']
+    },
+    {
+        category: 'Frontend',
+        icon: <Layout size={20} />,
+        items: ['React.js', 'Tailwind CSS', 'HTML', 'CSS']
+    },
+    {
+        category: 'Backend',
+        icon: <Server size={20} />,
+        items: ['Node.js', '.Net', 'Express.js', 'PHP CI'],
+
+    },
+    {
+        category: 'Databases',
+        icon: <Database size={20} />,
+        items: ['MongoDB', 'MySQL', 'PostgreSQL']
+    },
+    {
+        category: 'Cloud & DevOps',
+        icon: <Cloud size={20} />,
+        items: ['AWS', 'GCP', 'Docker', 'CI/CD', 'Ansible', 'Git', 'GitHub', 'Linux']
+    },
+    {
+        category: 'Specialized Tech',
+        icon: <Settings size={20} />,
+        items: ["Warehouse Management System", "Courier Aggregator System", "Planning And Forecasting System", "Courier Platform"]
+    }
 ];
 
 const Skills: React.FC = () => {
     return (
         <section id="skills" className="px-6">
             <div className="max-w-6xl mx-auto">
-                <motion.h2 
+                <motion.h2
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
@@ -67,7 +68,7 @@ const Skills: React.FC = () => {
                             </div>
                             <div className="flex flex-wrap gap-2">
                                 {skill.items.map((item, i) => (
-                                    <span 
+                                    <span
                                         key={i}
                                         className="px-4 py-2 rounded-xl bg-primary/50 border border-secondary/5 text-secondary text-xs font-bold uppercase tracking-widest hover:border-accent/30 hover:text-accent transition-all"
                                     >

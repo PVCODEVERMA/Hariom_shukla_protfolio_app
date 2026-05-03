@@ -3,35 +3,32 @@ import { motion } from 'framer-motion';
 import { Briefcase, MapPin } from 'lucide-react';
 
 const experiences = [
+
+    {
+    company: 'Daakit Technologies Pvt. Ltd.',
+    role: 'Tech Lead',
+    period: 'April 2026 - Present',
+    location: 'Onsite'
+  },
+
+    {
+    company: 'Daakit Technologies Pvt. Ltd.',
+    role: 'Senior FullStack Developer',
+    period: 'Jan 2026 - March 2026',
+    location: 'Onsite'
+  },
   {
     company: 'Daakit Technologies Pvt. Ltd.',
-    role: 'Software Engineer',
-    period: 'May 2025 - Present',
-    location: 'Onsite',
-    description: [
-      'Led the integration of Unicommerce shipper APIs with Daakit aggregator panel, enabling seamless synchronization of shipping and order management processes.',
-      'Integrated Base.com APIs into the Daakit Aggregator Panel, enhancing order processing and fulfillment efficiency for partner platforms.',
-      'Implemented Holisol and Delhivery Direct integrations to enable Same-Day Delivery (SDD), Next-Day Delivery (NDD), and hyperlocal delivery workflows.',
-      'Designed and implemented Value-Added Services (VAS) modules in the aggregator panel, enhancing client usability and operational efficiency.',
-      'Developed and streamlined the NDR (Non-Delivery Report) flow, automating issue reporting and resolution between aggregator and courier partners.',
-      'Architected and fully developed the Daakit Go courier platform, including system design, scalable backend architecture, and end-to-end API development.',
-      'Provisioned and managed Ubuntu-based EC2 instances on AWS, handling end-to-end server setup, configuration, and application deployment.',
-      'Performed infrastructure scaling on AWS, including EBS volume attachment and expansion, as well as system resource upgrades.',
-      'Configured cloud networking on Google Cloud Platform (GCP), including VPC setup and secure network architecture implementation.',
-      'Collaborated closely with product managers to refine logistics workflows, reducing manual intervention.'
-    ]
+    role: 'Junior Software Engineer',
+    period: 'May 2025 - DEC 2025',
+    location: 'Onsite'
   },
   {
     company: 'Stoild Private Limited',
-    role: 'Backend Developer (NodeJs)',
+    role: 'Junior Software Engineer',
     period: 'Jan 2024 - May 2025',
     location: 'Remote',
-    description: [
-      'Developed and maintained scalable RESTful APIs for diverse applications, including betting platforms and MLM systems using Node.js, Express.js, and MongoDB.',
-      'Designed and implemented backend architectures tailored to domain-specific requirements such as high concurrency and hierarchical commission structures.',
-      'Managed Linux servers hosting multiple backend codebases, deploying updates and monitoring system performance.',
-      'Optimized database queries for speed and reliability, and engaged in regular client interactions to gather requirements.'
-    ]
+  
   }
 ];
 
@@ -45,7 +42,7 @@ const Experience: React.FC = () => {
                     viewport={{ once: true }}
                     className="text-3xl md:text-5xl font-black mb-16 flex items-center gap-4 text-text uppercase tracking-tighter"
                 >
-                    Work
+                    Work Experience
                     <span className="h-px bg-secondary/20 flex-grow"></span>
                 </motion.h2>
 
@@ -81,14 +78,7 @@ const Experience: React.FC = () => {
                                     </div>
                                 </div>
                                 
-                                <ul className="space-y-4">
-                                    {exp.description.map((item, i) => (
-                                        <li key={i} className="text-secondary/80 text-sm md:text-base leading-relaxed flex items-start gap-4">
-                                            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-accent/40 flex-shrink-0" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
+                               
                             </div>
                         </motion.div>
                     ))}

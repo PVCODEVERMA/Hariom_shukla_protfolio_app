@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, ChevronDown ,Download } from 'lucide-react';
+import { Mail, Phone, ChevronDown, Download } from 'lucide-react';
+
+import profilePic from '../assets/pic.jpeg';
 
 const Hero: React.FC = () => {
     return (
@@ -16,10 +18,25 @@ const Hero: React.FC = () => {
                 className="text-center max-w-4xl"
             >
                 <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
+                    className="mb-8 relative inline-block"
+                >
+                    <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-2 border-accent/20 p-1.5 overflow-hidden bg-secondary/5 backdrop-blur-sm group">
+                        <img 
+                            src={profilePic} 
+                            alt="Hariom Shukla" 
+                            className="w-full h-full object-cover rounded-full transition-all duration-700 ease-in-out transform group-hover:scale-105"
+                        />
+                    </div>
+                </motion.div>
+
+                <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.2, duration: 0.5 }}
-                    className="mb-8 inline-block"
+                    className="mb-8 block"
                 >
                     <span className="px-4 py-2 rounded-full border border-secondary/20 bg-secondary/5 backdrop-blur-md text-accent text-[10px] md:text-sm font-bold tracking-widest uppercase">
                         Full-Stack Developer & DevOps Engineer
@@ -32,7 +49,7 @@ const Hero: React.FC = () => {
 
 
                 <p className="text-lg md:text-2xl text-secondary font-medium mb-12 max-w-2xl mx-auto leading-relaxed px-4">
-                    Building high-performance backend systems and seamless frontend experiences with 2+ years of expertise.
+                    Software Engineer with 2+ years of experience developing high-performance backend systems and scalable frontend solutions, focused on efficiency, reliability, and user experience.
                 </p>
 
                 <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-20">
@@ -48,9 +65,9 @@ const Hero: React.FC = () => {
                         </div>
                         <span className="font-bold text-xs md:text-sm uppercase tracking-widest">+91-9616412393</span>
                     </a>
-                    <a 
-                        href="https://drive.google.com/file/d/1TqR0nSE2cwjcAUv0L8zo_TZNVRCnJ9RV/view?usp=sharing" 
-                        target="_blank" 
+                    <a
+                        href="https://drive.google.com/file/d/1TqR0nSE2cwjcAUv0L8zo_TZNVRCnJ9RV/view?usp=sharing"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 mt-4 text-accent border-2 border-accent px-8 py-3 rounded-full uppercase tracking-tighter text-sm font-black hover:bg-accent hover:text-primary transition-all duration-300"
                     >
